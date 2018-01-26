@@ -1,0 +1,28 @@
+//Użytkownik wprowadza 3 liczby od 1 do 100. Wydrukuj je w kolejności rosnącej.
+
+import java.util.Scanner;
+
+import static java.util.Arrays.sort;
+
+public class Zadania4
+{
+    public static void main(String[] args)
+    {
+        Scanner Sc = new Scanner(System.in);
+        int a = Sc.nextInt();
+        int b = Sc.nextInt();
+        int c = Sc.nextInt();
+        //int suma = a+b+c;
+         if((a>0&&a<=100)&&(b>0&&b<=100)&&(c>0&&c<=100)){
+             int tab[] = {a,b,c};
+             sort(tab);
+             for(int x:tab){
+                 System.out.println(x);
+             }
+        }else {
+             System.out.println("błąd");
+        }
+    }
+}
+
+//hurraaaa!!!!! :D
